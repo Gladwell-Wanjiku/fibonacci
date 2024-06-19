@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val digits = fibbo(100)
-        binding.rvNumbers.layoutManager = GridLayoutManager(this,4)
+        binding.rvNumbers.layoutManager = GridLayoutManager(this,2)
         val numms = NumbersRecycler(digits)
         binding.rvNumbers.adapter = numms
 
